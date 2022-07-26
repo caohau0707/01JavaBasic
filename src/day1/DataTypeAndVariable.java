@@ -67,11 +67,12 @@ public class DataTypeAndVariable {
 	    		System.out.println( e + " degree Fahrenheit is equal to " + f + " su");
 	    	}
 	    		//***BAI 7***
-	    		public static void doExcercise7() {
+	    		public static void c7() {
 	    			float g = 1000;
 	    			float h = 0.254f; 
 	    			System.out.println(g + " inch is " + h + " meters");
 	    		}
+	    		
 	    	
 	
 }
