@@ -2,9 +2,12 @@ package day2;
 
 import java.util.Scanner;
 
+import org.openqa.selenium.By;
+
 public class Switch {
+	// ***Bai1***
 	public static void printDayOfWeek(int n) {
-		switch(n) {
+		switch (n) {
 		case 2:
 			System.out.println("Thu hai");
 			break;
@@ -26,75 +29,77 @@ public class Switch {
 		case 8:
 			System.out.println("Chu Nhat");
 			break;
-			default:
+		default:
 			System.out.println("Nhap lai n");
 			break;
-			
+
 		}
-		
+
 	}
+
 	public static void doExcercise1() {
 		System.out.println("Hay nhap gia tri cua n: ");
-		Scanner scan = new Scanner (System.in);
+		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
-		if(n<2||n>8) {
+		if (n < 2 || n > 8) {
 			System.out.println("Hay nhap lai n: ");
-		}
-		else if((n>=2)&&(n<6)) {
+		} else if ((n >= 2) && (n < 6)) {
 			System.out.println("Thu" + n);
-		}else if(n==7) {
-			System.out.println("Thu" +n);
-		}else {
+		} else if (n == 7) {
+			System.out.println("Thu" + n);
+		} else {
 			System.out.println("Chu nhat");
 		}
-			
-		
 	}
+
+	// ***Bai2***
 	public static void doExcercise2() {
-		int sum =0;
-		float average;
-		for (int i=0;i<=100;i++) {
-			sum = sum+i;
-		}
-		System.out.println("The sum is: " + sum);
-		average = (float)(sum/100);
-		System.out.println("The average: " + average);
+		System.out.println("Enter Locator Type: ");
+		Scanner scan = new Scanner(System.in);
+		String locatorType = scan.nextLine();
+		System.out.println("Enter Locator Value: ");
+		Scanner scan1 = new Scanner(System.in);
+		String locatorValue1 = scan.nextLine();
+		System.out.println("By." + locatorType + "(" + locatorValue1 + ")");
 	}
-	public static void doExcercise3() {
-		int sum =0;
-		int count = 0;
-		for (int i=111;i<=8899;i++) {
-			sum = sum +i;
-			count ++;
+
+	public By getLocator(String locatorType, String locatorValue) {
+		By result = null ;// hung gia tri tra ve
+		switch (locatorType) {
+		case "id": {
+			result = By.id(locatorValue);
+			break;
 		}
-		System.out.println("The sum: " +sum);
-		double average = (double)sum/(double)count;
-		System.out.println("The average: " + Math.round(average*100.0)/100.0);
-	} 
-	public static void doExcercise4() {
-		int sum =0;
-		int count =0;
-		for(int i=0;i<=100;i++) {
-			if(i%2==1) {
-				sum=sum+1;
-				count++;
-			}
-			System.out.println("The sum: " +sum);
-			double average = (double)sum/(double)count;
-			System.out.println(Math.round(average*100.0)/100.0);
+		case "name":  {
+			result = By.name(locatorValue);
+			break;
 		}
-	}
-	public static void doExcercise5(int max) {
-		double sumLeftToRight=0;
-		double sumRightToLeft=0;
-		for(int i=1;i<=max;i++) {
-			sumLeftToRight += (double)1/i;
-			sumRightToLeft += (double)1/(max - i +1);
+		case "linkText": {
+			result = By.linkText(locatorValue);
+			break;
 		}
-		System.out.println("sum left to right is" +sumLeftToRight);
-		System.out.println("sum right to left is" +sumRightToLeft);
+		case "cssSelector": {
+			result = By.cssSelector(locatorValue);
+			break;
+		}
+		case "partialLinkText": {
+			result = By.partialLinkText(locatorValue);
+			break;
+		}
+		case "tagName": {
+			result = By.tagName(locatorValue);
+			break;
+		}
+		case "xpath": {
+			result = By.xpath(locatorValue);
+			break;
+		}
+	default:
+		System.out.println("HiHi");
 		
+		}
+		return result;
 	}
+}
 	
 
-}

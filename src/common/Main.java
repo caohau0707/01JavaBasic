@@ -9,6 +9,7 @@ import day2.Array;
 import day2.Loops;
 import day2.Method;
 import day2.Switch;
+import day2.Test;
 import day3.Practice;
 
 public class Main {
@@ -38,7 +39,7 @@ public class Main {
 //		Switch.printDayOfWeek(9);
 //		Practice.doExcercise3();
 //		Loops.SumAndAverage();
-		
+
 //		Loops.squareBoard(5);
 //		int n = Loops.doExcercise10("Hello Word");
 //		System.out.println(n);
@@ -58,8 +59,8 @@ public class Main {
 //		b[2]=("def");
 //		String s = Array.arrayToString(b);
 //		System.out.println(s);
- //       Array.doExcercise4("hoa", "ngoc");
-		
+		// Array.doExcercise4("hoa", "ngoc");
+
 //		boolean check = Method.isOdd(3);
 //		if(check) {
 //			System.out.println("ODD");
@@ -73,13 +74,52 @@ public class Main {
 //		boolean hasEight = Method.hasEight(670);
 //		System.out.print(hasEight);
 //		Method.doExcercise();
-//	Switch.doExcercise1();
-   //Loops.sum5(1,100);
+//	    Switch.doExcercise1();
+		// Loops.sum5(1,100);
+	//	Practice.doExcercise4();
+//		int [] a =new int[3];
+//		a[0] =1;
+//		a[1]=2;
+//		a[2] =3;
+//		Test.doExcercise4(a);
+//		int[] a = new int[1];
+//		a[0] =2;
+//		Loops.doExcersice11(a);
+//		Loops.doExcercise12();
+//		Cach 1:
+//		it [] a= new int[] {1,3,4,2,6};
+//		Loops.doExcercise13(a);
+		//Cach 2
+//		int [] a = new int [5];
+//		a[0] =1;
+//		a[1] =3;
+//		a[2] =4;
+//		a[3] =2;
+//		a[4] =6;
+//		Loops.doExcercise13(a);
+		
+		//Array-Bai2
+//		int[] a = new int [3];
+//		a[0] =1;
+//		a[1] =3;
+//		a[2] =4;
+//		Array.printArray3(a);
+//		System.out.println(); 
+//		int[] b = new int[1];
+//		b[0] =1;
+//		Array.printArray3(b);
+//		System.out.println(); 
+//		int[] c= new int[0];
+//		Array.printArray3(c);
+//		Loops.sum5(10, 11);
+		//Switch.
 Practice.doExcercise4();
 
-	}
-	}
-
+		
+	
+		
+   
 	
 
-
+	}
+}
