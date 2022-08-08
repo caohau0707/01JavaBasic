@@ -40,7 +40,7 @@ public class Main {
 //		String b= Practice.arrayToString(a);
 //		System.out.println(b);
 		
-		Practice.test();
+		Practice.doExcercise6b("Welcome to Java Basic");
 	}
 
 }

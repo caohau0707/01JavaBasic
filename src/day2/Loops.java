@@ -144,11 +144,29 @@ public class Loops {
 			System.out.println(a[i]);
 		}
 	}
+
 //	    public static void doExcercise14() {
 //	    	int n;
 //	    	while((n<2)||(n>8)) {
 //	    		System.out.println("Nhap lai n =");
 //	    	}
 //	    }
+	
+	//Bai 8 cach khai bao mang 2 chieu [5][5] dong truoc cot sau
+	public static void printArray(String input) {
+		String[][] arr = new String[5][5];
+		for (int i = 0; i < arr.length; i++) {
+			int count = 0;
+			for (int j = 0; j < arr[0].length; j++) // arr[0] lay ra do dai cua cot
+			{
+				System.out.print(input);
+				count++;
+				if (count < arr[0].length) {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+	}
 
 }

@@ -168,7 +168,7 @@ public class Practice {
 
 	}
 
-	// ***Bai9***
+	// ***Bai10***
 	public static void doExcercise9a() {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("hay nhap quiz score: ");
@@ -282,6 +282,29 @@ public class Practice {
 			System.out.println("\n");
 		}
 	}
+	// ***Bai16***
+	public static void doExcercise16() {
+		Scanner scan = new Scanner(System.in);
+		String ctn;
+		
+		do {
+			System.out.println("What is the command keyword to exit a loop in Java?\n"
+			+ "a. int\n"
+			+ "b. continue\n"
+			+ "c. break\n"
+			+ "d. exit\n");
+			System.out.println("Enter your choice: ");
+			String choice = scan.nextLine();
+			if(choice.equals("b")) {
+				System.out.println("Incorrect");
+			}else {
+				System.out.println("Correct");
+			}
+			System.out.println("Again? press y to continue: ");
+			ctn = scan.nextLine();
+			}while(ctn.equals("y"));	
+	}
+	
 
 	// ***Bai17***
 	public static void doExcercise17a() {
@@ -347,4 +370,53 @@ public class Practice {
 		}while(ctn.equals("y"));
 		
 	}
+	public static void doExcercise10a() {
+		System.out.println("Enter quiz: ");
+		Scanner scan = new Scanner(System.in);
+		int quiz = scan.nextInt();
+		while(quiz<0 || quiz>100) {
+			System.out.println("Enter quiz: ");
+			quiz= scan.nextInt();
+		}
+		System.out.println("Enter mid-term: ");
+		int mid = scan.nextInt();
+		while(mid<0 || mid>100) {
+			System.out.println("Enter quiz: ");
+			quiz= scan.nextInt();
+		}
+		System.out.println("Enter final: ");
+		int finalScore = scan.nextInt();
+		while(finalScore<0 || finalScore>100) {
+			System.out.println("Enter finalScore: ");
+			finalScore= scan.nextInt();
+		}
+		float average = (float)(quiz+mid+finalScore)/3;
+		if(average>=90) {
+			System.out.println("Your grade is A");
+		}
+		else if(average>=70 && average<90) {
+			System.out.println("Your grade is B");
+		}
+		else if(average>=50 && average<70) {
+			System.out.println("Your grade is C");	
+	}
+		if(average<50) {
+			System.out.println("Your grade is F");
+		
 }
+		}
+	//Input: string
+	//Ouput: All space => replace
+	//Space dau va cuoi bi remove
+	//Solution: string1.replace("","-")
+	public static void doExcercise6b(String s1) {
+		String s2 = s1.trim();
+		String s3= s2.replaceAll(" ", "_");
+		System.out.println(s3);
+	
+	}
+	public static void doExcercise6c(String s2) {
+		
+		
+	}
+	}

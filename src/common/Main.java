@@ -113,7 +113,9 @@ public class Main {
 //		Array.printArray3(c);
 //		Loops.sum5(10, 11);
 		//Switch.
-Practice.doExcercise4();
+//Practice.doExcercise4();
+		//Loops.squareBoard(5);
+		Loops.printArray("#");
 
 		
 	
